@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bak">#009E2121</color>
+    <color name="redfreg">#f85555</color>
+
 </resources>

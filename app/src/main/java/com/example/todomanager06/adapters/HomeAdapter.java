@@ -1,4 +1,4 @@
-package com.example.todomanager06.adapter;
+package com.example.todomanager06.adapters;
 
 import android.annotation.SuppressLint;
 import android.view.LayoutInflater;

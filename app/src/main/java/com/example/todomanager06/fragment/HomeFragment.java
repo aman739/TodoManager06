@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.todomanager06.App;
-import com.example.todomanager06.adapter.HomeAdapter;
+import com.example.todomanager06.adapters.HomeAdapter;
 import com.example.todomanager06.databinding.FragmentHomeBinding;
 import com.example.todomanager06.model.TaskModel;
 

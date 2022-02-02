@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/singupbackround"
+    android:padding="12dp"
+    tools:context=".fragment.auth.SingUpFragment">
+
+    <TextView
+        android:id="@+id/ed_lifetrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150sp"
+        android:drawableStart="@drawable/checkinsing"
+        android:padding="20dp"
+        android:text="Lifetrack"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sing_up_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ovalforsingup"
+        android:backgroundTint="#f85555"
+        android:padding="16dp"
+        android:text="Sing Up"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <Button
+        android:id="@+id/login_up_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Login"
+        android:textColor="#f85555"
+        android:background="@drawable/ovalforlogin"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/sing_up_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

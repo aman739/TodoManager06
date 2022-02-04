@@ -45,7 +45,7 @@ public class SingUpFragment extends Fragment {
     public void onStart() {
         super.onStart();
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-        if (currentUser == null) {
+        if (currentUser != null) {
             Navigation.findNavController(requireView()).navigate(R.id.homeFragment);
         }
     }

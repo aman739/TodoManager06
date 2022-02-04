@@ -9,6 +9,7 @@
     android:layout_marginRight="10dp"
     android:layout_marginTop="20dp"
     app:cardCornerRadius="12dp"
+
     app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout

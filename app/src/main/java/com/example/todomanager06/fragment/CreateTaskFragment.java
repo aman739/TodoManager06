@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,16 +18,22 @@ import com.example.todomanager06.App;
 import com.example.todomanager06.R;
 import com.example.todomanager06.databinding.FragmentCreateTaskBinding;
 import com.example.todomanager06.model.TaskModel;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CreateTaskFragment extends BottomSheetDialogFragment implements DatePickerDialog.OnDateSetListener {
     FragmentCreateTaskBinding binding;
     private int startYear;
     private int startMonth;
     private int startDay;
-
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     private String date;
     private String repeat;
 
@@ -66,10 +73,26 @@ public class CreateTaskFragment extends BottomSheetDialogFragment implements Dat
         });
     }
 
+
     private void writeToDataBase() {
         String text = binding.taskEd.getText().toString();
         TaskModel taskModel = new TaskModel(text, date, repeat);
         App.getApp().getDb().taskDao().insert(taskModel);
+        Map<String, String> task = new HashMap<>();
+        task.put("task",taskModel.getTask() );
+        task.put("data",taskModel.getDate());
+        task.put("repeat",taskModel.getRepeat());
+
+        db.collection("tasks").add(task).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
     }
 
     private void showDatePickerDialog() {

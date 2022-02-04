@@ -6,20 +6,25 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
 
 import com.example.todomanager06.App;
+import com.example.todomanager06.R;
 import com.example.todomanager06.adapters.HomeAdapter;
 import com.example.todomanager06.databinding.FragmentHomeBinding;
 import com.example.todomanager06.model.TaskModel;
 
 import java.util.List;
 
-public class HomeFragment extends Fragment implements HomeAdapter.Listener {
 
+public class HomeFragment extends Fragment implements HomeAdapter.Listener {
     private FragmentHomeBinding binding;
 
     @Override
@@ -34,6 +39,16 @@ public class HomeFragment extends Fragment implements HomeAdapter.Listener {
         super.onViewCreated(view, savedInstanceState);
         initClickers();
         initAdapter();
+        transitionToolbar();
+    }
+
+    private void transitionToolbar() {
+        binding.menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(requireView()).navigate(R.id.profileFragment);
+            }
+        });
     }
 
     private void initAdapter() {
@@ -51,6 +66,7 @@ public class HomeFragment extends Fragment implements HomeAdapter.Listener {
                 createTaskFragment.show(requireActivity().getSupportFragmentManager(), "");
             }
         });
+
     }
 
     @Override
@@ -67,4 +83,5 @@ public class HomeFragment extends Fragment implements HomeAdapter.Listener {
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
+
 }

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
     </style>
 
     <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@android:color/transparent</item>
-    </style>
+    </style> 
+    <style name="Too"/>
 
 </resources>

@@ -11,14 +11,18 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/drawable/ceckforlife.xml" value="0.240625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/drawable/checkinsing.xml" value="0.240625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/drawable/gradient_background.xml" value="0.240625" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.240625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/drawable/ovalforlogin.xml" value="0.240625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/drawable/ovalforreg.xml" value="0.240625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/drawable/ovalforsingup.xml" value="0.240625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/activity_main.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/fragment_create_task.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/fragment_finish_registration.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/fragment_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/fragment_profile.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/fragment_registration.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/fragment_sing_up.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/HW/app/src/main/res/layout/item_task.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TodoManager/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TodoManager/app/src/main/res/drawable/create_fragment_oval.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/TodoManager/app/src/main/res/drawable/dialog_rounded.xml" value="0.2703125" />

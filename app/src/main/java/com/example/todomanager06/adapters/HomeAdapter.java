@@ -57,12 +57,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeHolder> {
             binding.titleTv.setText(model.getTask());
             binding.dateTv.setText(model.getDate());
             binding.repeatTv.setText(model.getRepeat());
-            itemView.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View view) {
-                    listener.OnLongClick(model);
-                    return false;
-                }
+            itemView.setOnLongClickListener(view -> {
+                listener.OnLongClick(model);
+                return false;
             });
         }
     }
